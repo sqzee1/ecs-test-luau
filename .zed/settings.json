@@ -1,0 +1,136 @@
+{
+  "file_types": {
+    "Luau": ["*.luau", "*.d.luau"]
+  },
+  "languages": {
+    "Luau": {
+      "tab_size": 4,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"]
+        }
+      }
+    }
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "lsp": {
+    "luau-lsp": {
+      "settings": {
+        "roblox": {
+          // This is a Rojo-synced Roblox project, so Roblox globals/types are needed.
+          "enabled": true,
+          "security_level": "plugin",
+          "download_api_documentation": true,
+          "download_definitions": true
+        },
+        "fflags": {
+          "enable_by_default": false,
+          "enable_new_solver": true,
+          "sync": true,
+          "override": {}
+        },
+        "binary": {
+          "ignore_system_version": false,
+          "path": null,
+          "args": []
+        },
+        "plugin": {
+          // No Studio plugin sync workflow here; sync is done via `rojo serve`.
+          "enabled": false,
+          "port": 3667,
+          "proxy_path": null
+        },
+        "definitions": [],
+        "documentation": [],
+        "luau-lsp": {
+          "ignoreGlobs": [],
+          "sourcemap": {
+            "enabled": true,
+            "autogenerate": true,
+            "rojoProjectFile": "default.project.json",
+            "includeNonScripts": true,
+            "sourcemapFile": "sourcemap.json"
+          },
+          "diagnostics": {
+            "includeDependents": true,
+            "workspace": false,
+            "strictDatamodelTypes": true
+          },
+          "types": {
+            "definitionFiles": ["types/game.d.luau", "types/global.d.luau"],
+            "disabledGlobals": []
+          },
+          "inlayHints": {
+            "parameterNames": "literals",
+            "variableTypes": true,
+            "parameterTypes": true,
+            "functionReturnTypes": true,
+            "hideHintsForErrorTypes": true,
+            "hideHintsForMatchingParameterNames": true,
+            "typeHintMaxLength": 50,
+            "makeInsertable": true
+          },
+          "hover": {
+            "enabled": true,
+            "showTableKinds": false,
+            "multilineFunctionDefinitions": false,
+            "strictDatamodelTypes": true,
+            "includeStringLength": true
+          },
+          "completion": {
+            "enabled": true,
+            "autocompleteEnd": true,
+            "imports": {
+              "enabled": true,
+              "suggestServices": true,
+              "includedServices": [],
+              "excludedServices": [],
+              "suggestRequires": true,
+              "requireStyle": "Auto",
+              "stringRequires": {
+                "enabled": false
+              },
+              "separateGroupsWithLine": false,
+              "ignoreGlobs": ["**/_Index/**"],
+              "useConst": true
+            },
+            "addParentheses": true,
+            "addTabstopAfterParentheses": true,
+            "fillCallArguments": true,
+            "showPropertiesOnMethodCall": true,
+            "showKeywords": true,
+            "anonymousAutofilledFunction": {
+              "enabled": true,
+              "addTypeAnnotations": true,
+              "addTabstopForParameters": true
+            },
+            "showDeprecatedItems": true,
+            "enableFragmentAutocomplete": false
+          },
+          "signatureHelp": {
+            "enabled": true
+          },
+          "index": {
+            "enabled": true,
+            "maxFiles": 10000
+          },
+          "format": {
+            "convertQuotes": false
+          },
+          "plugins": {
+            "enabled": false,
+            "paths": [],
+            "timeoutMs": 5000,
+            "fileSystem": {
+              "enabled": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
