@@ -18,10 +18,13 @@ janitor = "howmanysmall/janitor@1.18.3"
 quickzone = "ldgerrits/quickzone@1.4.6"
 sera = "enzzyfrenzzy/sera@0.0.2"
 replecs = "pepeeltoro41/replecs@0.3.1"
-jecs-utils = "pepeeltoro41/jecs-utils@1.4.4"
-jecs-vide = "pepeeltoro41/jecs-vide@1.0.8"
-jabby = "ukendio/jabby@0.2.0"
+jecs_utils = "pepeeltoro41/jecs-utils@1.4.4"
+jecs_vide = "pepeeltoro41/jecs-vide@1.0.8"
+jabby = "alicesaidhi/jabby@0.3.1"
+planck_jabby = "yetanotherclown/planck-jabby@0.2.0"
 planck = "yetanotherclown/planck@0.2.0"
+planck_runservice = "yetanotherclown/planck-runservice@0.2.0"
+lync = "axp3cter/lync@2.3.3"
 
 [server-dependencies]
 

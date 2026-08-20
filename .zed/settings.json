@@ -61,7 +61,7 @@
             "strictDatamodelTypes": true
           },
           "types": {
-            "definitionFiles": ["types/game.d.luau", "types/global.d.luau"],
+            "definitionFiles": [ "@global=types/global.d.luau", "@game=types/game.d.luau"],
             "disabledGlobals": []
           },
           "inlayHints": {
